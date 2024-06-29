@@ -562,6 +562,10 @@ public class SnakeAndLadder {
                             movePlayerAround(playerInTurn, totalMove);
                             System.out.println("New Position of " + playerInTurn.getName() + ": " + playerInTurn.getPosition());
                             System.out.println("===========================================================");
+
+                            if (hellboundMoves = 0) {
+                                gameStatus = 2;
+                            }
                         }
                         while (getGameStatus() != 2 || totalMoves <= hellboundMoves);
                         if (totalMoves <= hellboundMoves) {
